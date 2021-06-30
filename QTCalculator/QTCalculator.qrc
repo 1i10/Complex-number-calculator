@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="QTCalculator">
+    <file>image/Info.png</file>
+    <file>image/mask2.png</file>
+    <file>image/mask.png</file>
+    <file>image/InfoIcon.png</file>
+    <file>image/glass3.jpg</file>
+    <file>image/glass3RES.jpg</file>
+    <file>image/glass.jpg</file>
+    <file>image/glass2.jpg</file>
+    <file>image/border.jpg</file>
+    <file>image/steel3.jpg</file>
+    <file>image/steel.png</file>
+    <file>image/display.jpg</file>
+  </qresource>
+</RCC>

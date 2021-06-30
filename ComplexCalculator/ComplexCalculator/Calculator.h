@@ -15,6 +15,6 @@ public:
 	void SetExpression(std::string Expr);
 	std::string GetResult();
 	std::string GetExpression();
-	char GetOperationFromExpression();//получить операцию между двумя комплексными числами
-	std::vector <ComplexNumber> GetComplexNumbersFromExpression();//получить комплексные числа из выражения
+	char GetOperationFromExpression();//РїРѕР»СѓС‡РёС‚СЊ РѕРїРµСЂР°С†РёСЋ РјРµР¶РґСѓ РґРІСѓРјСЏ РєРѕРјРїР»РµРєСЃРЅС‹РјРё С‡РёСЃР»Р°РјРё
+	std::vector <ComplexNumber> GetComplexNumbersFromExpression();//РїРѕР»СѓС‡РёС‚СЊ РєРѕРјРїР»РµРєСЃРЅС‹Рµ С‡РёСЃР»Р° РёР· РІС‹СЂР°Р¶РµРЅРёСЏ
 };

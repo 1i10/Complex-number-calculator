@@ -56,7 +56,7 @@
 В поле для отображения истории содержится информация о последних вычислениях (Само выражение и результат его вычисления).  
 
 <a name="ClassDesign"><h2>Проектирование классов</h2></a>
-<a name="ClassEntity"><h2>Классы-сущностей</h2></a>
+<a name="EntityClass"><h2>Классы-сущностей</h2></a>
 * [*ComplexNumber*](https://github.com/1i10/Complex-number-calculator/tree/master/ComplexCalculator/ComplexCalculator#ClassComplexNumber). Содержит в свойствах действительную и мнимую части комплексного числа. Доступ к полям осуществляется посредством сеттеров и геттеров. Также имеется метод для конвертирования комплексного числа в строку для передачи результата управляющему классу Calculator. И, перегрузки операторов, выполняющих арифметические операции для использования в методах классов, использующие соответствующие операции (AddOperation, SubOperation, MultOperation, DivOperation);
 * [*ArOperation*](https://github.com/1i10/Complex-number-calculator/tree/master/ComplexCalculator/ComplexCalculator#ClassArOperation). Базовый класс для совершения арифметической операции между двумя комплексными числами класса ComplexNumber;
 * [*AddOperation*](https://github.com/1i10/Complex-number-calculator/tree/master/ComplexCalculator/ComplexCalculator#ClassAddOperation). Класс для совершения операции сложения комплексных чисел;
@@ -135,30 +135,30 @@ DisplayResult | Поле для отображения результата вы
   
 
 <a name="Example"><h2>Пример</h2></a>
-Совершим ввод в соответствующее поле. При некорректном или частично верном вводе рамка поля становится красного цвета. Кнопка ‘=’ остается заблокированной.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/IncorrectStringInput.png "Некорректный ввод строки")  
+Совершим ввод в соответствующее поле. При некорректном или частично верном вводе рамка поля становится красного цвета. Кнопка ‘=’ остается заблокированной.    
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/IncorrectStringInput.png" width="450" height="350" title="Некорректный ввод строки" />  
 При правильном вводе выражения рамка перекрашивается в черный цвет, и кнопка ‘=’ становится доступной для нажатия.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CorrectStringInput.png "Корректный ввод строки")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CorrectStringInput.png" width="450" height="350" title="Корректный ввод строки" />  
 При нажатии на ‘=’ само выражение и его результат будут отображены на дисплее. Строка ввода будет очищена автоматически. Кнопка ‘=’ будет снова заблокирована.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultAdd.png "Результат сложения двух комплексных чисел")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultAdd.png" width="450" height="350" title="Результат сложения двух комплексных чисел" />  
 Теперь совершим остальные операции: ‘-‘, ‘*’, ‘/’.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultSub.png "Результат вычитания двух комплексных чисел")  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultMult.png "Результат умножения двух комплексных чисел")  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultDiv.png "Результат деления двух комплексных чисел")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultSub.png" width="450" height="350" title="Результат вычитания двух комплексных чисел" />  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultMult.png" width="450" height="350" title="Результат умножения двух комплексных чисел" />  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultDiv.png" width="450" height="350" title="Результат деления двух комплексных чисел" />  
 Пропишем выражение, при котором будет совершаться деление на ноль.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultDivOnZero.png "Результат деления на ноль")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultDivOnZero.png" width="450" height="350" title="Результат деления на ноль" />
 Теперь откроем окно с историей операций и убедимся, что все введенные ранее операции были сохранены.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultsInHistoryWindow.png "Окно с историей вычислений")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultsInHistoryWindow.png" width="450" height="500" title="Окно с историей вычислений" />  
 Теперь выполним операцию сравнения по модулю.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CompareFromModul.png "Сравнение двух комплексных чисел по модулю")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CompareFromModul.png" width="450" height="500" title="Сравнение двух комплексных чисел по модулю" />  
 Закроем историю. И теперь сравним комплексные числа по аргументу.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CompareFromArgument.png "Сравнение двух комплексных чисел по аргументу")  
-Далее, очистим историю операций.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ClearHistoryWindow.png "Очистка истории вычислений")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/CompareFromArgument.png" width="450" height="350" title="Сравнение двух комплексных чисел по аргументу" />  
+Далее, очистим историю операций.   
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ClearHistoryWindow.png" width="450" height="500" title="Очистка истории вычислений" />  
 Откроем окно с краткой информацией по программе.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/OpenInfoWindow.png "Вывод окна с краткой информацией")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/OpenInfoWindow.png" width="450" height="350" title="Вывод окна с краткой информацией" />  
 Произведем сложение двух нулевых комплексных чисел.  
-![image](https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultAddNullComplexNumbers.png "Сложение нулевых комплексных чисел")  
+<img src="https://github.com/1i10/Complex-number-calculator/blob/master/Images/Examples/ResultAddNullComplexNumbers.png" width="450" height="350" title="Сложение нулевых комплексных чисел" />  
 
 
 
